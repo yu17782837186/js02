@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>js的变量认识</title>
+		<meta charset="UTF-8"/>
+		<script type="text/javascript">
+			//弱类型语言
+//			js的变量是严格区分大小写的
+//			字符串可以是单引号也可以是双引号
+//			可以声明同名变量  后面的会覆盖前面的
+
+//			数据类型判断的关键字：typeof
+//			js中的数据类型
+//				number 数字类型（包含数字都是数字类型）
+//				string 字符类型（包含引号不区分单双都是字符类型）
+//				boolean true和false
+//				object	引用类型 new Date();
+//				null
+//					var d=null;
+//					alert(typeof d);
+//				undefined 不赋初值的情况下，默认值是undefined 类型也是undefined
+//					var c;
+//					alert(c);
+//			var a=123;
+//			var A=1234;
+//			var a1=1.256;
+//			var a2="js";
+//			var a3='n';
+//			var a4=true;
+//			var a5=new Date();
+//			var a="学习";
+//			alert(a);
+
+
+//			var b=new Date();
+//			var b1=false;
+//			alert(typeof b);
+
+//			var c;
+//			alert(c);
+
+//			var d=null;
+//			alert(typeof d);
+
+//			特殊情况需要注意，要赋初始值
+//			var s;
+//			alert(s);
+//			alert(typeof c);
+//			if(typeof c == undefined) {
+//				
+//			}
+			var a=1;
+			var b=2;
+			var c="1";
+			var d=true;
+			var e="0";
+			var f=8;
+			alert(a+b);
+			alert(a-c); //	字符串除了+运算 其它运算都会隐士转换为number
+			alert(Boolean(c));
+			alert(Boolean(e));
+			alert(Boolean(f));
+		</script>
+	</head>
+	<body>
+		<h3>js的变量认识</h3>
+	</body>
+</html>

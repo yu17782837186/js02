@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>js的==和===的区别</title>
+		<meta charset="UTF-8"/>
+		<script type="text/javascript">
+			var a=1;
+			var a1="1";
+			var a2=true;
+			var a3="true";
+			var a4="a";
+			var a5="a";
+//			alert(a==a1);//true
+//			alert(a==a2);//true
+//			alert(a==a3);//false
+//			alert(a1==a2);//true
+//			alert(a1==a3);//false
+//			alert(a2==a3);//false
+//			alert(a4==a5);//true  
+			//除了object以外其它类型在比较之时，会先转为number类型再进行比较
+			//同类型比较直接比较内容
+			
+//			alert(a===a1);//false
+//			alert(a===a2);//false
+//			alert(a===a3);//false
+//			alert(a1===a2);//false
+//			alert(a1===a3);//false
+//			alert(a2===a3);//false
+//			alert(a4===a5);//true  
+			//不是同类型 直接false 同类型才比较内容是否一致 一致为true,否则为false
+			
+			var a=new String("123");
+			var b=new String("123");
+			alert(123==a);//true
+			alert(a==b);
+			alert(Number(a3));
+		</script>
+	</head>
+	<body>
+		<h3>js的==和===的区别</h3>
+	</body>
+</html>
